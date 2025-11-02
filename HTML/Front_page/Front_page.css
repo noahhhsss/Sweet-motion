@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background: #d3be7f; 
+    background: #a8914d; 
     padding: 10px 20px;
     position: fixed;
     top: 0;               
@@ -57,7 +57,7 @@ button.Login {
     margin-left: 15px;
     margin-right: 25px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     width: 200px;
 }
 
@@ -68,7 +68,7 @@ button a {
 }
 
 .background {
-  background-image: url("variety-pastries-including-one-with-yellow-slice_976492-71761 1.png");
+  background-image: url("ChatGPT\ Image\ Nov\ 2\,\ 2025\,\ 09_44_24\ PM.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -187,7 +187,7 @@ button a {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #d3be7f;
+    background-color: #af9750;
     padding: 15px;
     
   }
