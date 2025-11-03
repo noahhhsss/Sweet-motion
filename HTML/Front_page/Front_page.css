@@ -66,6 +66,11 @@ button a {
     font-weight: bold;
     font-size: 15px;
 }
+a.btntext{
+    font-size: 20px;
+    font-style: "Quattrocento Sans";
+
+}
 
 .background {
   background-image: url("ChatGPT\ Image\ Nov\ 2\,\ 2025\,\ 09_44_24\ PM.png");
@@ -143,6 +148,7 @@ button a {
         margin: 40px 20px;
         text-align: center;
         margin-top: 120px;
+        
         
     }
 
