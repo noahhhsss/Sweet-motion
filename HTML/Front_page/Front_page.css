@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding-top: 0px;
-
 }
 
 * {
@@ -29,6 +28,7 @@ body {
 .logo {
     font-size: 35px; 
     font-weight: bold;
+    font-family: "Poetsen One", sans-serif;
 }
 
 ul {
@@ -46,10 +46,9 @@ li a {
     color: black; 
     font-size: 25px; 
     font-weight: bold; 
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin-right: 10px;
     align-content: center;
-
 }
 
 button.Login {
@@ -66,14 +65,14 @@ button a {
     font-weight: bold;
     font-size: 15px;
 }
-a.btntext{
-    font-size: 20px;
-    font-style: "Quattrocento Sans";
 
+a.btntext {
+    font-size: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
 }
 
 .background {
-  background-image: url("ChatGPT\ Image\ Nov\ 2\,\ 2025\,\ 09_44_24\ PM.png");
+  background-image: url("ChatGPT Image Nov 2, 2025, 09_44_24 PM.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -81,20 +80,19 @@ a.btntext{
   padding: 100px;
   height: 100vh;
   margin-bottom: 200px; 
+  margin-bottom: -5px;
 }
 
 .StrtTxt {
     margin-top: 60px;
     margin-left: 60px;
     text-shadow: 0px 0px 2px yellow;
-
 }
 
 .StrtTxt h1 {
     font-size: 80px;
     color: white;
     font-family: "Poetsen One", sans-serif;
-    
 }
 
 .Motto {
@@ -103,7 +101,7 @@ a.btntext{
 }
 
 .ShopBtn {
-    background: rgb(215, 38, 56,100);
+    background: rgb(215, 38, 56, 1);
     color: white;
     font-weight: bold;
     padding: 20px;
@@ -114,42 +112,108 @@ a.btntext{
     border: none;
 }
 
+/* FOOD SECTION */
+section.aboutfood {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: center;
+}
+
+.food {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(3, 0, 0);
+  letter-spacing: 5px;
+  margin: 0; 
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 60px;
+}
+
+.cardcontent {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.cardcontent:hover {
+  transform: translateY(-5px);
+}
+
+.cardcontentimg img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card1 {
+  padding: 15px 20px;
+}
+
+.card1 h3 {
+  font-size: 22px;
+  margin: 2px 0;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.card1 p {
+  margin-top: -5px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 18px;
+}
 
 
+
+
+/* RESPONSIVE */
 @media (max-width: 992px) {
     .navdiv {
         flex-direction: column;
-        align-items: center;
-
+        align-items: flex-start;      
     }
 
     ul {
         width: 100%;
-        text-align: left;
+        text-align: left;      
         margin-top: 10px;
     }
 
     li {
         display: block;
-        margin: 10px 0;
+        margin: 10px 0;    
+        align-content: center;   
     }
 
     li a {
-        font-size: 18px;
+        font-size: 18px;   
         margin: 0;
     }
 
     button.Login {
         width: 150px;
-        margin-top: 10px;
+        margin-top: 10px;     
     }
 
     .StrtTxt {
-        margin: 40px 20px;
+        margin: 40px 20px;     
         text-align: center;
         margin-top: 120px;
-        
-        
     }
 
     .StrtTxt h1 {
@@ -163,9 +227,14 @@ a.btntext{
     .ShopBtn {
         width: 150px;
         font-size: 14px;
-        
     }
-    
+
+    .food {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+      .food-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .menu-icon {
@@ -179,7 +248,6 @@ a.btntext{
   .navdiv {
     flex-direction: column;
     align-items: flex-start;
-
   }
 
   .menu-icon {
@@ -195,7 +263,6 @@ a.btntext{
     width: 100%;
     background-color: #af9750;
     padding: 15px;
-    
   }
 
   #navLinks li {
@@ -209,22 +276,26 @@ a.btntext{
   }
 
   .ShopBtn {
-    background: rgb(215, 38, 56,100);
+    background: rgb(215, 38, 56, 1);
     color: white;
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
     font-size: 15px;
-    font-style: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", sans-serif;
     width: 200px;
-    cursor: pointer ;
+    cursor: pointer;
     border: none;
+  }
+
+  .food {
+     font-size: 40px;
+    letter-spacing: 3px;
     
 }
-
-.Food {
-  height: 200px; 
-  background-color: transparent; 
+.food-grid {
+    grid-template-columns: 1fr;
 }
 
+}
 }
